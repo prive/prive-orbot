@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="menu_home">표지</string>
+  <string name="menu_browse">찾아보기</string>
+  <string name="menu_settings">설정</string>
+  <string name="menu_info">도움말</string>
+  <string name="menu_about">소개</string>
+  <string name="button_help">도움말</string>
+  <string name="button_close">닫기</string>
+  <string name="button_about">소개</string>
+  <string name="menu_exit">나가기</string>
+  <string name="btn_back">뒤로</string>
+  <string name="btn_cancel">취소</string>
+  <!--Welcome Wizard strings (DJH)-->
+  <string name="wizard_proxy_help_info">프록시 설정</string>
+  <!--END Welcome Wizard strings (DJH)-->
+  <string name="pref_general_group">일반</string>
+  <!--New Wizard Strings-->
+  <!--Title Screen-->
+  <!--Warning screen-->
+  <string name="wizard_warning_title">경고</string>
+  <!--Permissions screen-->
+  <!--TipsAndTricks screen-->
+  <!--<string name="wizard_tips_firefox">Firefox - Android browser - To be used along with ProxyMob Add-on </string>
+	<string name="wizard_tips_proxymob">ProxyMob - Simple Firefox Add-on for setting HTTP, SOCKS and SSL proxy settings</string>
+    <string name="firefox_apk_url">https://market.android.com/details?id=org.mozilla.firefox</string>
+    <string name="proxymob_url">https://addons.mozilla.org/mobile/downloads/latest/251558/type:attachment/addon-251558-latest.xpi?src=addon-detail</string>-->
+  <!--Transparent Proxy screen-->
+  <string name="wizard_transproxy_none">없음</string>
+  <!--<string name="pref_use_whispercore">Use WhisperCore</string>
+<string name="pref_use_whispercore_summary">Use the proprietary NetFilter APIs provided by WhisperSystems (required device with WhisperCore installed)</string>-->
+  <string name="status">상태</string>
+  <string name="error">오류</string>
+  <string name="default_bridges"></string>
+  <string name="btn_save_settings">설정 저장하기</string>
+</resources>

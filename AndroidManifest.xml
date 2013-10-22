@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.torproject.android" 
+      android:versionName="12.0.5" 
+      android:versionCode="61"
+        android:installLocation="auto"
+      > <uses-permission android:name="android.permission.INTERNET" />
+ 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ 	<uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+ 	    
+    <uses-sdk android:minSdkVersion="5" android:targetSdkVersion="18"/>
+    
+    <application android:name=".OrbotApp" android:icon="@drawable/ic_launcher"
+     android:label="@string/app_name" 
+     android:configChanges="locale|orientation|screenSize"
+      android:theme="@style/Theme.Sherlock"      
+      android:persistent="true"
+      android:allowBackup="false"
+      android:allowClearUserData="true"
+     >
+      
+        <activity android:name=".Orbot" android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+<!--
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+        </intent-filter>
+-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="bridge" />
+                <data android:scheme="bridge+obfs" />
+            </intent-filter>
+        
+         <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            	<action android:name="org.torproject.android.REQUEST_HS_PORT" />
+            </intent-filter>
+             <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            	<action android:name="org.torproject.android.START_TOR" />
+            </intent-filter>
+            
+             <!-- 
+              <intent-filter>
+                 <action android:name="android.intent.action.SEND" />
+                
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <category android:name="android.intent.category.ALTERNATIVE" /> 
+                 <category android:name="android.intent.category.SELECTED_ALTERNATIVE" /> 
+                 
+                 <data android:mimeType="*/*" />
+             </intent-filter>
+              --> 
+           
+        </activity>
+      	
+      	<activity android:name=".wizard.LotsaText"/>
+      	<activity android:name=".wizard.Permissions"/>
+      	<activity android:name=".wizard.TipsAndTricks"/>
+      	<activity android:name=".wizard.ConfigureTransProxy"/>
+      	<activity android:name=".wizard.ChooseLocaleWizardActivity"/>
+      	
+      	<activity android:name=".settings.SettingsPreferences"  android:label="@string/app_name"/>
+        <activity android:name=".settings.AppManager"  android:label="@string/app_name"/>
+      
+    	<service android:enabled="true"
+    		android:name=".service.TorService" 
+    		android:exported="false"
+    		android:process=":remote"
+    		>
+	            <intent-filter>
+	                <action android:name="org.torproject.android.service.ITorService" />
+	              	<action android:name="org.torproject.android.service.TOR_SERVICE" />
+            </intent-filter>
+    	</service>
+    	
+    	
+    	<receiver android:name=".OnBootReceiver">
+			<intent-filter>
+				<action	android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+    	
+    </application>
+    
+
+</manifest> 

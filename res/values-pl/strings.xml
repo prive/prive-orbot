@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">Orbot</string>
+  <string name="internal_web_url">http://orbot/</string>
+  <string name="default_web_url">http://check.torproject.org</string>
+  <string name="secure_default_web_url">https://check.torproject.org</string>
+  <string name="tor_check_api_url">https://check.torproject.org/?TorButton=true</string>
+  <string name="control_permission_label">Uruchom / Zatrzymaj Tor</string>
+  <string name="tor_proxy_service_process">torproxyservice</string>
+  <string name="status_starting_up">Orbot uruchamia się...</string>
+  <string name="status_activated">Połączony do Sieci Tor</string>
+  <string name="status_disabled">Orbot jest Nieaktywny</string>
+  <string name="status_shutting_down">Ortbot wyłącza się</string>
+  <string name="not_anonymous_yet">UWAGA: twój ruch w sieci nie jest jeszcze anonimowy! Skonfiguruj swoje aplikacje by używały HTTP proxy 127.0.0.1:8118 lub SOCKS4A lub SOCKS5 proxy 127.0.0.1:9050</string>
+  <string name="menu_home">Strona Główna</string>
+  <string name="menu_browse">Przeglądaj</string>
+  <string name="menu_settings">Ustawienia</string>
+  <string name="menu_log">Logi</string>
+  <string name="menu_info">Pomoc</string>
+  <string name="menu_apps">Aplikacje</string>
+  <string name="menu_start">Start</string>
+  <string name="menu_stop">Stop</string>
+  <string name="menu_about">Informacje</string>
+  <string name="menu_wizard">Wizard</string>
+  <string name="button_help">Pomoc</string>
+  <string name="button_close">Zamknij</string>
+  <string name="button_about">Informacje</string>
+  <string name="button_clear_log">Wyczyść Logi</string>
+  <string name="menu_verify">Zaznacz</string>
+  <string name="menu_exit">Wyjście</string>
+  <string name="press_to_start">-Naciśnij i przytrzymaj by uruchomić-</string>
+  <string name="pref_trans_proxy_group">Transparenty Proxing (wymaga ROOT\'a)</string>
+  <string name="pref_trans_proxy_title">Transparenty Proxing</string>
+  <string name="pref_trans_proxy_summary">Automatyczne zastosowanie Tor\'a do aplikacji</string>
+  <string name="pref_transparent_all_title">Użyj Tor\'a dla wszystkich aplikacji</string>
+  <string name="pref_transparent_all_summary">Ruch proxy dla wszystkich aplikacji przez Tor\'a</string>
+  <string name="pref_transparent_port_title">Lista portów</string>
+  <string name="pref_transparent_port_dialog">Wprowadź porty dla proxy</string>
+  <string name="pref_has_root">Wymaga dostępu Root\'a</string>
+  <string name="pref_has_root_summary">Wymaga dostępu ROOT\'a dla transparent proxying</string>
+  <string name="status_install_success">Pliki binarne Tora zainstalowane poprawnie!</string>
+  <string name="status_install_fail">Pliki binarne Tora nie mogły być zainstalowane. Sprawdź Log i skontaktuj się z nami mailowo: tor-assistants@torproject.org</string>
+  <string name="title_error">Błąd aplikacji</string>
+  <string name="wizard_title">Orbot</string>
+  <string name="wizard_btn_tell_me_more">O aplikacji Orbot</string>
+  <string name="btn_next">Dalej</string>
+  <string name="btn_back">Powrót</string>
+  <string name="btn_finish">Zakończ</string>
+  <string name="btn_okay">OK</string>
+  <string name="btn_cancel">Anuluj</string>
+  <!--Welcome Wizard strings (DJH)-->
+  <string name="wizard_details">Szczegóły</string>
+  <string name="wizard_details_msg">Orbot jest aplikacją open-source zawierającą Tor\'a, LibEvent oraz Privoxy. Ortbot zapewnia local HTTP proxy (8118) oraz SOCKS proxy (9050) w sieci Tor. Na urządzeniach z ROOT\'em możliwe jest przekierowanie całego ruchu przez TOR\'a.</string>
+  <string name="wizard_permissions_root">Pozwolenie Udzielone</string>
+  <string name="wizard_permissions_stock">Pozwolenia Orbot\'a</string>
+  <string name="wizard_premissions_msg_root">Doskonale! Wykryliśmy, że posiadasz pozwolenia Root\'a dla Orbot\'a.\nBędziemy używać tych możliwości mądrze.</string>
+  <string name="wizard_permissions_msg_stock">Choć nie jest to wymagane, Orbot staje się potężniejszym narzędziem, jeżeli twoje urządzenie posiada pozwolenia Root\'a. Użyj poniższego przycisku by dać Orbot\'owi dodatkowe możliwości.</string>
+  <string name="wizard_permissions_no_root">Jeżeli nie masz pozwoleń Root\'a lub nie wiesz o czym tak naprawdę jest mowa, pamiętaj tylko by używać aplikacji, które są przystosowane do pracy z Orbot\'em</string>
+  <string name="wizard_permissions_consent">Rozumiem, chcę kontynuować bez pozwoleń \"Super użytkownika\"</string>
+  <string name="wizard_permission_enable_root">Udostępnij pozwolenia Root\'a dla Orbot\'a</string>
+  <string name="wizard_configure_msg">Orbot daje ci możliwość przekierowywania całęgo ruchu przez Tor\'a lub przekierowywania tylko wybranych aplikacji.</string>
+  <string name="wizard_configure_all">Przekieruj cały ruch przez Tor\'a</string>
+  <string name="wizard_configure_select_apps">Przekieruj wybrane aplikacje przez Tor\'a</string>
+  <string name="wizard_tips_tricks">Aplikacje z działającym Orbot\'em</string>
+  <string name="wizard_tips_msg">Poniższe aplikacje zostały stworzone do pracy z Orbot\'em. Naciśnij każdy z przycisków by zainstalować aplikacje lub zrób to później wyszukując je w Android Market/Google PLAY</string>
+  <string name="wizard_tips_otrchat">Gibberbot - bezpieczny klient \"instant messaging\" dla Androida</string>
+  <string name="wizard_tips_proxy">Ustawienia Proxy - Naucz się jak skonfigurować aplikacje by działały z Orbot\'em</string>
+  <string name="wizard_proxy_help_info">Ustawienia Proxy</string>
+  <!--END Welcome Wizard strings (DJH)-->
+  <!--New Wizard Strings-->
+  <!--Title Screen-->
+  <!--Warning screen-->
+  <!--Permissions screen-->
+  <!--TipsAndTricks screen-->
+  <string name="wizard_tips_orweb">Orweb: Przeglądarka działająca z Tor\'em, posiadająca wzmocnioną ochronę prywatności.</string>
+  <!--<string name="wizard_tips_firefox">Firefox - Android browser - To be used along with ProxyMob Add-on </string>
+	<string name="wizard_tips_proxymob">ProxyMob - Simple Firefox Add-on for setting HTTP, SOCKS and SSL proxy settings</string>
+    <string name="firefox_apk_url">https://market.android.com/details?id=org.mozilla.firefox</string>
+    <string name="proxymob_url">https://addons.mozilla.org/mobile/downloads/latest/251558/type:attachment/addon-251558-latest.xpi?src=addon-detail</string>-->
+  <!--Transparent Proxy screen-->
+  <string name="wizard_transproxy_title">Transparenty Proxing</string>
+  <string name="wizard_transproxy_none">Brak</string>
+  <!--<string name="pref_use_whispercore">Use WhisperCore</string>
+<string name="pref_use_whispercore_summary">Use the proprietary NetFilter APIs provided by WhisperSystems (required device with WhisperCore installed)</string>-->
+  <string name="status">Status</string>
+  <string name="default_bridges"></string>
+  <string name="powered_by">powered by The Tor Project </string>
+</resources>

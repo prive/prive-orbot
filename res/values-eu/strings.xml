@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">Orbot</string>
+  <string name="internal_web_url">http://orbot/</string>
+  <string name="default_web_url">http://check.torproject.org</string>
+  <string name="secure_default_web_url">https://check.torproject.org</string>
+  <string name="tor_check_api_url">https://check.torproject.org/?TorButton=true</string>
+  <string name="control_permission_label">Tor abiarazi eta gelditu</string>
+  <string name="tor_proxy_service_process">torproxyservice</string>
+  <string name="status_starting_up">Orbot abiarazten ari da...</string>
+  <string name="status_activated">Tor sarera konektatuta</string>
+  <string name="status_disabled">\"Orbot desaktibatuta dago</string>
+  <string name="status_shutting_down">Orbot itzaltzen ari da</string>
+  <string name="tor_process_starting">Tor bezeroa hasten...</string>
+  <string name="tor_process_complete">eginda.</string>
+  <string name="tor_process_waiting">itxaroten.</string>
+  <string name="not_anonymous_yet">ABISUA: Zure trafikoa ez da anonimoa oraindik! Mesedez konfigura itzazu zure aplikazioak 127.0.0.1:8118 HTTP proxya edo 127.0.0.1:9050 SOCKS4 edo SOCKS5 proxyak erabiltzeko</string>
+  <string name="menu_home">Etxea</string>
+  <string name="menu_browse">Arakatu</string>
+  <string name="menu_settings">Ezarpenak</string>
+  <string name="menu_log">Saioa hasi</string>
+  <string name="menu_info">Laguntza</string>
+  <string name="menu_apps">Aplikazioak</string>
+  <string name="menu_start">Abiarazi</string>
+  <string name="menu_stop">Gelditu</string>
+  <string name="menu_about">Honi buruz</string>
+  <string name="menu_wizard">Laguntzailea</string>
+  <string name="button_help">Laguntza</string>
+  <string name="button_close">Itxi</string>
+  <string name="button_about">Honi buruz</string>
+  <string name="button_clear_log">Zerrenda Garbitu</string>
+  <string name="menu_verify">Egiaztatu</string>
+  <string name="menu_exit">Irten</string>
+  <string name="press_to_start">- sakatu luze hasteko -</string>
+  <string name="pref_trans_proxy_group">Proxyatze Gardena (Root behar du)</string>
+  <string name="pref_trans_proxy_title">Proxyatze Gardena</string>
+  <string name="pref_trans_proxy_summary">Aplikazioen Torifikatze Automatikoa</string>
+  <string name="pref_transparent_all_title">Tor-tu Dena</string>
+  <string name="pref_transparent_all_summary">Aplikazio guztien trafikoa Tor bidez proxyatu</string>
+  <string name="pref_transparent_port_title">Portu Zerrenda</string>
+  <string name="pref_transparent_port_dialog">Sartu proxyatzeko portuak</string>
+  <string name="pref_has_root">Root sarrera eskatu</string>
+  <string name="pref_has_root_summary">Root sarrera eskatu proxyatze gardenarentzat</string>
+  <string name="status_install_success">Tor bitarrak zuzen instalatuta!</string>
+  <string name="status_install_fail">Tor fitxategi bitarrak ezin izan dira instalatu. Mesedez ikusi erregistroa eta jakinarazi tor-assistants@torproject.org</string>
+  <string name="title_error">Aplikazio Akatsa</string>
+  <string name="wizard_title">Orbot</string>
+  <string name="wizard_btn_tell_me_more">Orboti buruz</string>
+  <string name="btn_next">Hurrengoa</string>
+  <string name="btn_back">Atzera</string>
+  <string name="btn_finish">Amaitu</string>
+  <string name="btn_okay">Ados</string>
+  <string name="btn_cancel">Utzi</string>
+  <!--Welcome Wizard strings (DJH)-->
+  <string name="wizard_details">Orbot xehetasun batzuk</string>
+  <string name="wizard_permissions_root">Baimena Emanda</string>
+  <string name="wizard_permissions_stock">Orbot Baimenak</string>
+  <string name="wizard_premissions_msg_root">Bikain! Orbotentzako root baimenak gaituta dituzula detektatu dugu.</string>
+  <string name="wizard_permission_enable_root">Root Orboti eman</string>
+  <string name="wizard_configure">Torifikazioa Konfiguratu</string>
+  <string name="wizard_configure_all">Aplikazio gustiak Tor bidez proxyatu</string>
+  <string name="wizard_configure_select_apps">Hautatu Banakako Aplikazioak Torentzat</string>
+  <string name="wizard_tips_tricks">Orbot-gaitutako Aplikazioak</string>
+  <string name="wizard_tips_otrchat">Gibberbot - Andriodrentzako berehalako mezulari bezero ziurra</string>
+  <string name="wizard_tips_proxy">Proxy Ezarpenak - Ikasi zure aplikazioak Orbotekin funtziona dezaten nola konfiguratu</string>
+  <string name="wizard_proxy_help_info">Proxy Ezarpenak</string>
+  <string name="wizard_final">Orbot prest dago!</string>
+  <!--END Welcome Wizard strings (DJH)-->
+  <string name="pref_hs_group">Ezkutuko Zerbitzuak</string>
+  <string name="pref_general_group">Orokorra</string>
+  <string name="pref_start_boot_title">Hasi Orbot Abiarazterakoan</string>
+  <string name="pref_start_boot_summary">Automatikoki Orbot hasi eta Tor konektatu zure Android gailua abiarazterakoan</string>
+  <!--New Wizard Strings-->
+  <!--Title Screen-->
+  <!--Warning screen-->
+  <string name="wizard_warning_title">Abisua</string>
+  <!--Permissions screen-->
+  <string name="wizard_permissions_title">Baimenak</string>
+  <!--TipsAndTricks screen-->
+  <string name="wizard_tips_title">Orbot-Gaitutako Aplikazioak</string>
+  <string name="wizard_tips_gibberbot">Gibberbot: Txat aplikazio segurua Off-the-Record enkriptazioarekin.</string>
+  <string name="gibberbot_apk_url">https://market.android.com/details?id=info.guardianproject.otr.app.im</string>
+  <string name="wizard_tips_orweb">Orweb - Tor bidez lan egiten duen pribatutasun-hobetua duen nabigatzailea</string>
+  <string name="orweb_apk_url">https://market.android.com/details?id=info.guardianproject.browser</string>
+  <!--<string name="wizard_tips_firefox">Firefox - Android browser - To be used along with ProxyMob Add-on </string>
+	<string name="wizard_tips_proxymob">ProxyMob - Simple Firefox Add-on for setting HTTP, SOCKS and SSL proxy settings</string>
+    <string name="firefox_apk_url">https://market.android.com/details?id=org.mozilla.firefox</string>
+    <string name="proxymob_url">https://addons.mozilla.org/mobile/downloads/latest/251558/type:attachment/addon-251558-latest.xpi?src=addon-detail</string>-->
+  <!--Transparent Proxy screen-->
+  <string name="wizard_transproxy_title">Proxyatze Gardena</string>
+  <string name="wizard_transproxy_none">Bat ere ez</string>
+  <string name="button_grant_superuser">Supererabiltzaile sarrera eskatu</string>
+  <string name="pref_select_apps">Aplikazioak hautatu</string>
+  <string name="pref_node_configuration">Nodo Konfigurazioa</string>
+  <string name="pref_entrance_node">Sarrera Nodoak</string>
+  <string name="pref_entrance_node_dialog">Sartu Sarrera Nodoak</string>
+  <!--<string name="pref_use_whispercore">Use WhisperCore</string>
+<string name="pref_use_whispercore_summary">Use the proprietary NetFilter APIs provided by WhisperSystems (required device with WhisperCore installed)</string>-->
+  <string name="pref_proxy_type_title">Proxy mota</string>
+  <string name="pref_proxy_type_summary">Proxy zerbitzariarentzako erabiltzeko protokoloak: HTTP, HTTPS, Socks4, Socks5</string>
+  <string name="pref_proxy_type_dialog">Sartu Proxy Mota</string>
+  <string name="pref_proxy_host_title">Proxy Ostalaria</string>
+  <string name="pref_proxy_host_summary">Proxy zerbitzari ostalaria</string>
+  <string name="pref_proxy_host_dialog">Sartu Proxy Ostalaria</string>
+  <string name="pref_proxy_port_title">Proxy Portua</string>
+  <string name="pref_proxy_port_summary">Proxy zerbitzari portua</string>
+  <string name="pref_proxy_port_dialog">Sartu Proxy portua</string>
+  <string name="status">Egoera</string>
+  <string name="transparent_proxying_enabled">Proxyatze gardena GAITUTA</string>
+  <string name="warning_error_starting_transparent_proxying_">ABISUA: akatsa proxyatze gardena hasterakoan!</string>
+  <string name="couldn_t_start_tor_process_">Ezin izan da Tor prozesua hasi:</string>
+  <string name="privoxy_is_running_on_port_">Privoxy hurrengo portua exekutatzen ari da:</string>
+  <string name="bridge_error">Zubi Akatsa</string>
+  <string name="error">Akatsa</string>
+  <string name="exit_nodes">Irteera Nodoak</string>
+  <string name="enter_exit_nodes">Irteera Nodoak sartu</string>
+  <string name="use_only_these_specified_nodes">*Bakarrik* zehaztutako nodo hauek erabili</string>
+  <string name="bridges">Zubiak</string>
+  <string name="use_bridges">Zubiak erabili</string>
+  <string name="bridges_obfuscated">Nahasitako Zubiak</string>
+  <string name="enable_if_configured_bridges_are_obfuscated_bridges">Gaitu konfiguratutako zubiak nahasitako zubiak badira</string>
+  <string name="ip_address_and_port_of_bridges">IP helbidea eta zubien portua</string>
+  <string name="enter_bridge_addresses">Sartu Zubi Helbideak</string>
+  <string name="relays">Erreleak</string>
+  <string name="relaying">Erreleatzea</string>
+  <string name="relay_port">Errele Portua</string>
+  <string name="enter_or_port">Sartu OR portua</string>
+  <string name="relay_nickname">Errele ezizena</string>
+  <string name="enter_ports">Portuak sartu</string>
+  <string name="enable_hidden_services">Ezkutuko Zerbitzuak Gaitu</string>
+  <string name="enter_localhost_ports_for_hidden_services">sartu localhost portuak ezkutuko zerbitzuentzat</string>
+  <string name="hidden_service_ports">Ezkutuko Zerbitzu Portuak</string>
+  <string name="project_urls">https://www.torproject.org/docs/android\nhttps://guardianproject.info/apps/orbot/</string>
+  <string name="the_tor_license">Tor Lizentzia</string>
+  <string name="https_torproject_org">https://torproject.org</string>
+  <string name="third_party_software">3.-Ataleko-Softwarea:</string>
+  <string name="tor_version">Tor v0.2.3.10: https://www.torproject.org</string>
+  <string name="libevent_version">LibEvent v1.4.13: http://www.monkey.org/~provos/libevent/</string>
+  <string name="privoxy_version">Privoxy v3.0.12: http://www.privoxy.org</string>
+  <string name="iptables_version">Iptables v1.4.7: http://www.netfilter.org</string>
+  <string name="openssl_version">OpenSSL v1.0.0f: http://www.openssl.org</string>
+  <string name="hidden_service_on">ezkutuko zerbitzua hemen:</string>
+  <string name="unable_to_start_tor">Ezin izan da Tor hasi:</string>
+  <string name="pref_use_sys_iptables_title">Lehenetsitako Iptables erabili</string>
+  <string name="notification_using_bridges">Zubiak gaituta!</string>
+  <string name="default_bridges"></string>
+  <string name="set_locale_title">Lokala ezarri</string>
+  <string name="set_locale_summary">Aukeratu Orbotentzako lokala eta hizkuntza</string>
+  <string name="wizard_locale_title">Hizkuntza aukeratu</string>
+  <string name="wizard_locale_msg">Lehenetsia utzi edo uneko hizkuntzara aldatu</string>
+  <string name="powered_by">Tor Projectek indartua</string>
+  <string name="btn_save_settings">Ezarpenak gorde</string>
+</resources>
