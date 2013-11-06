@@ -14,6 +14,7 @@ import org.torproject.android.settings.SettingsPreferences;
 import org.torproject.android.wizard.ChooseLocaleWizardActivity;
 import org.torproject.android.wizard.TipsAndTricks;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.NotificationManager;
 import android.content.ComponentName;
@@ -42,6 +43,8 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnLongClickListener;
@@ -53,19 +56,19 @@ import android.widget.SlidingDrawer;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+//import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.view.Menu;
+//import com.actionbarsherlock.view.MenuInflater;
+//import com.actionbarsherlock.view.MenuItem;
 
 
-public class Orbot extends SherlockActivity implements TorConstants, OnLongClickListener, OnTouchListener, OnSharedPreferenceChangeListener
+public class Orbot extends Activity implements TorConstants, OnLongClickListener, OnTouchListener, OnSharedPreferenceChangeListener
 {
 	/* Useful UI bits */
 	private TextView lblStatus = null; //the main text display widget
 	private ImageProgressView imgStatus = null; //the main touchable image for activating Orbot
 //	private ProgressDialog progressDialog;
-	private MenuItem mItemOnOff = null;
+	//private MenuItem mItemOnOff = null;
     private TextView downloadText = null;
     private TextView uploadText = null;
     private TextView mTxtOrbotLog = null;
@@ -109,7 +112,8 @@ public class Orbot extends SherlockActivity implements TorConstants, OnLongClick
         
         startService(new Intent(INTENT_TOR_SERVICE));
 		
-    	doLayout();
+//    	doLayout();
+        finish();
 	}
 	
 	private void doLayout ()
@@ -202,12 +206,12 @@ public class Orbot extends SherlockActivity implements TorConstants, OnLongClick
     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        MenuInflater inflater = getSupportMenuInflater();
-        inflater.inflate(R.menu.main, menu);
-       
-        mItemOnOff = menu.getItem(0);
-        
+//        super.onCreateOptionsMenu(menu);
+//        MenuInflater inflater = getSupportMenuInflater();
+//        inflater.inflate(R.menu.main, menu);
+//       
+//        mItemOnOff = menu.getItem(0);
+//        
         return true;
     }
     
@@ -255,15 +259,15 @@ public class Orbot extends SherlockActivity implements TorConstants, OnLongClick
                                 }
                                 else if (mService.getStatus() == TorServiceConstants.STATUS_OFF)
                                 {
-                                    if (mItemOnOff != null)
-                                            mItemOnOff.setTitle(R.string.menu_stop);
+//                                    if (mItemOnOff != null)
+//                                            mItemOnOff.setTitle(R.string.menu_stop);
                                         startTor();
                                         
                                 }
                                 else
                                 {
-                                    if (mItemOnOff != null)
-                                            mItemOnOff.setTitle(R.string.menu_start);
+//                                    if (mItemOnOff != null)
+//                                            mItemOnOff.setTitle(R.string.menu_start);
                                         stopTor();
                                         
                                 }
@@ -786,8 +790,8 @@ public class Orbot extends SherlockActivity implements TorConstants, OnLongClick
                                             
                                     }
                                     
-                                    if (mItemOnOff != null)
-                                            mItemOnOff.setTitle(R.string.menu_stop);
+//                                    if (mItemOnOff != null)
+//                                            mItemOnOff.setTitle(R.string.menu_stop);
                                     
                                     
                                     if (autoStartFromIntent)
@@ -808,8 +812,8 @@ public class Orbot extends SherlockActivity implements TorConstants, OnLongClick
                                     
                                     appendLogTextAndScroll(torServiceMsg);
                                     
-                                    if (mItemOnOff != null)
-                                            mItemOnOff.setTitle(R.string.menu_stop);
+//                                    if (mItemOnOff != null)
+//                                            mItemOnOff.setTitle(R.string.menu_stop);
                                             
                             }
                             else
@@ -821,8 +825,8 @@ public class Orbot extends SherlockActivity implements TorConstants, OnLongClick
                                     imgStatus.setImageResource(R.drawable.toroff);
                                     lblStatus.setText(getString(R.string.status_disabled) + "\n" + getString(R.string.press_to_start));
                                     
-                                    if (mItemOnOff != null)
-                                            mItemOnOff.setTitle(R.string.menu_start);
+//                                    if (mItemOnOff != null)
+//                                            mItemOnOff.setTitle(R.string.menu_start);
                                     
                             }
                     }

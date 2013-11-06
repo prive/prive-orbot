@@ -50,7 +50,7 @@ import android.os.Build;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
-import android.support.v4.app.NotificationCompat;
+//import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 public class TorService extends Service implements TorServiceConstants, TorConstants, Runnable, EventHandler
@@ -101,7 +101,7 @@ public class TorService extends Service implements TorServiceConstants, TorConst
 	private long lastWritten = -1;
 	
 	
-	private NotificationManager mNotificationManager = null;
+//	private NotificationManager mNotificationManager = null;
 	
     public void logMessage(String msg)
     {
@@ -195,7 +195,7 @@ public class TorService extends Service implements TorServiceConstants, TorConst
 	
 	private void clearNotifications ()
 	{
-		mNotificationManager.cancelAll();
+//		mNotificationManager.cancelAll();
 		
 		
 	}
@@ -223,7 +223,7 @@ public class TorService extends Service implements TorServiceConstants, TorConst
 
 		notification.setLatestEventInfo(context, contentTitle, contentText, contentIntent);
 
-		mNotificationManager.notify(notifyId, notification);
+//		mNotificationManager.notify(notifyId, notification);
 
 
 	}
@@ -255,7 +255,7 @@ public class TorService extends Service implements TorServiceConstants, TorConst
 	   registerReceiver(mNetworkStateReceiver , mNetworkStateFilter);
 		
 
-		mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//		mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
 		new Thread ()
 		{
@@ -1055,11 +1055,11 @@ public class TorService extends Service implements TorServiceConstants, TorConst
 			}
 		}
 		
-		NotificationCompat.Builder mNotifyBuilder;
+//		NotificationCompat.Builder mNotifyBuilder;
 		
 		private void startNotification (String message, boolean persistent)
 		{
-			
+			/*
 			if (mNotifyBuilder == null)
 			{
 				mNotifyBuilder = new NotificationCompat.Builder(this)
@@ -1086,7 +1086,7 @@ public class TorService extends Service implements TorServiceConstants, TorConst
 
 			  mNotificationManager.notify(
 			    		NOTIFY_ID,
-			            mNotifyBuilder.getNotification());
+			            mNotifyBuilder.getNotification());*/
 		}
 		
 
